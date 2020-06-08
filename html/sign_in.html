@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Sign Up</h2>
+<?php 
+if(isset($_POST['submit'])) {
+	echo "found";
+}
+?>
+<form action="/html/products.html" method="POST">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="pass">Password:</label><br>
+  <input type="password" id="pass" name="pass"><br>	
+  <label for="cpass">Confirm Password:</label><br>
+  <input type="password" id="cpass" name="cpass"><br><br>
+  <button type="submit">Submit</button>
+</form>
+
+</body>

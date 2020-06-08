@@ -1,0 +1,32 @@
+<?php include "connection.php" ?>
+
+<?php 
+if(isset($_POST['submit'])) {
+	echo "found";
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<h2>Basic HTML Table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Email</th> 
+    <th>Password</th>
+  </tr>
+  <tr>
+    <td><?php echo $_POST["name"]; ?></td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
